@@ -127,7 +127,7 @@ a:hover {
   width: 300px;
 }
 
-.name, .email, .mobile, .rsvp {
+.name, .email, .mobile, .country, .address {
   width: 296px;
   height: 30px;
   border: 1px solid #63886D;
@@ -137,7 +137,7 @@ a:hover {
   margin-bottom: 10px;
 }
 
-.rsvp {
+.country {
   height: 34px !important;
   width: 300px;
 }
