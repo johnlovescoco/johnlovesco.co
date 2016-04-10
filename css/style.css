@@ -70,13 +70,21 @@ p.san-serif {
 
 a {
 	-webkit-transition: all 0.2s ease-out;
-	color: #367363;
+	color: #3A3730;
 	text-decoration: none;
+	border-bottom: 1px  #B7B5B2 solid;
+	padding-bottom: 2px;
 }
 
 a:hover {
 	color: #5B975C;
+	border-bottom: 1px  #C5DBC6 solid;
 	text-decoration: none;
+}
+
+.light a {
+	color: #ffffff;
+	border-bottom: 1px  #ffffff solid;
 }
 
 .container {
