@@ -1,9 +1,8 @@
 @charset 'UTF-8';
 
 html, body {
-	min-width: 600px;
-    max-width: 100%;
-    overflow-x: hidden;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 
 body {
@@ -15,92 +14,105 @@ body {
 	}
 
 h1 {
-	font-family: 'futura', 'helvetica-neue', helvetica, arial, sans-serif;
+	font-family: "futura-pt", 'helvetica-neue', helvetica, arial, sans-serif;
 	font-weight: 500;
-	font-size: 36px;
-	line-height: 1.3;
-  letter-spacing: 4px;
+	font-size: 32px;
+	line-height: 1.4;
+  letter-spacing: 8px;
 	margin: 0 auto;
-	color: #222222;
-  margin-bottom: 18px;
+	color: #3A3730;
+	text-transform: uppercase;
 }
 
  h1 span {
-   font-size: 28px;
+   font-size: 42px;
    font-family: 'baskerville', 'georgia' serif;
    font-style: italic;
    font-weight: 500;
  }
 
-h2 {
-	font-family: 'futura', 'helvetica-neue', helvetica, arial, sans-serif;
-	font-weight: 500;
-	font-size: 12px;
-  letter-spacing: 0.5px;
-	margin: 0 auto;
-	margin-bottom: 10px;
-	color: #32583F;
-  text-transform: uppercase;
+ h1.light {
+	 color: #ffffff;
+ }
+
+ h2 {
+ 	font-family: "futura-pt", 'helvetica-neue', helvetica, arial, sans-serif;
+ 	font-weight: 500;
+ 	font-size: 14px;
+ 	line-height: 4;
+  letter-spacing: 8px;
+ 	margin: 0 auto;
+ 	color: #3A3730;
+	text-transform: uppercase;
+}
+
+.light {
+	color: #ffffff;
 }
 
 p {
-	font-family: 'futura', 'helvetica-neue', helvetica, arial, sans-serif;
-	font-weight: 400;
-	font-size: 12px;
+	font-family: 'baskerville', 'georgia' serif;
+	font-style: italic;
+	font-weight: 500;
+	font-size: 16px;
 	line-height: 2;
   letter-spacing: 2px;
 	margin: 0 auto;
-	color: #222222;
+	color: #3A3730;
 }
 
-p.serif {
-  font-size: 14px;
-  font-family: 'baskerville', 'georgia' serif;
-  font-style: italic;
-  color: #32583F;
-  font-weight: 500;
-  line-height: 1.6;
-}
-
-p span {
-  font-size: 14px;
-  font-family: 'baskerville', 'georgia' serif;
-  font-style: italic;
-  font-weight: 500;
-}
-
-.italic-type {
-  font-style: italic;
+p.san-serif {
+	font-family: "futura-pt", 'helvetica-neue', helvetica, arial, sans-serif;
+ 	font-weight: 400 !important;
+ 	font-size: 10px;
+	font-style: normal;
 }
 
 a {
 	-webkit-transition: all 0.2s ease-out;
-	color: #2AA5DD;
+	color: #367363;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #ff6c98;
+	color: #5B975C;
 	text-decoration: none;
 }
 
 .container {
-	width: 600px;
+	width: 100%;
 	height: 100%;
 	margin: 0 auto;
 	padding: 0;
+	background-color: #ffffff;
+}
+
+.row {
+	width: 100%;
+	min-height: 400px;
+	text-align: center;
+}
+
+.a {
+	background-color: #f8f8f8;
+}
+
+.b {
+	background-color: #EBBFA8;
+}
+
+.c {
+	background-color: #f8f8f8;
+}
+
+.d {
+	background-color: #EBBFA8;
 }
 
 .card {
-	max-width: 600px;
-  margin-top: 60px !important;
-  margin-bottom: 60px !important;
+	max-width: 480px;
 	margin: 0 auto;
-	padding: 0;
-  background-color: #BFDCCA;
-  /*-webkit-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);
-  box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.1);*/
+	padding: 10%;
 }
 
 .header-image {
@@ -115,40 +127,66 @@ a:hover {
   background-image: url(../img/footer-image.png);
 }
 
-.details {
-	max-width: 300px;
-	margin: 0 auto;
-	padding: 0;
-  text-align: center;
+.navigate-down {
+	width: 24px;
+	height: 24px;
 }
+
+
+/* Form */
 
 .form {
-  width: 300px;
+  max-width: 480px;
+	margin: 0 auto;
 }
 
-.name, .email, .mobile, .country, .address {
-  width: 296px;
+.name, .email, .mobile, .country, .address, .food {
+  width: 260px;
   height: 30px;
-  border: 1px solid #63886D;
+  border: none;
   background-color: #FFFFFF;
   border-radius: 4px;
-  text-align: center;
+  text-align: left;
   margin-bottom: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 2px #EBBFA8 solid;
+	-webkit-appearance:none;
+	color: #3A3730;
 }
 
-.country {
-  height: 34px !important;
-  width: 300px;
+.name::-webkit-input-placeholder {
+	color: #3A3730;
+	opacity: 0.2;
+}
+
+.name:focus, .food:focus, .food-req:focus {
+	border: 2px #E79B89 solid;
+	outline: none;
 }
 
 .button {
-  width: 300px;
+  width: 280px;
   height: 34px;
-  border: 1px solid #63886D;
-  background-color: #63886D;
-  border-radius: 4px;
+	border: none;
+  border: 1px #ffffff solid;
+	background-color: #EBBFA8;
+  border-radius: 2px;
   text-align: center;
   margin-bottom: 10px;
   font-weight: bold;
   color: #ffffff;
+	-webkit-appearance:none;
+}
+
+select.food {
+	background-color: #ffffff;
+	width: 284px;
+	height: 36px;
+	text-align: center;
+	color: #3A3730;
+}
+
+select option {
+	text-align: center !important;
 }
