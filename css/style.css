@@ -139,9 +139,12 @@ a:hover {
 }
 
 .footer-image {
-  max-width: 600px;
-  height: 250px;
-  background-image: url(../img/footer-image.png);
+  max-width: 320px;
+  height: 160px;
+  background-image: url(../img/footer-image-wedding@2x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
 }
 
 .paypal-logo {
