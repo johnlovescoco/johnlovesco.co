@@ -8,7 +8,7 @@ html, body {
 body {
 	margin: 0;
 	padding: 0;
-	background: #f8f8f8;
+	background-color: #f9f9f9;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	}
@@ -108,7 +108,7 @@ a:hover {
 }
 
 .a {
-	background-color: #f8f8f8;
+	background-color: #f9f9f9;
 }
 
 .b {
@@ -116,7 +116,7 @@ a:hover {
 }
 
 .c {
-	background-color: #f8f8f8;
+	background-color: #f9f9f9;
 }
 
 .d {
